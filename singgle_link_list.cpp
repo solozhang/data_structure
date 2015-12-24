@@ -72,9 +72,7 @@ int Linklist::GetNode(int n)
             break;
         pnode = pnode->next;
     }
-    if (pnode != NULL)
-        return pnode->key;
-    return -999999;
+    return pnode->key;
 }
 
 Linklist::~Linklist()
@@ -100,5 +98,4 @@ int main(void)
     link.PrintList();
     link.DeleteNode();
     link.PrintList();
-    printf("the %dth is %d\n", 4, link.GetNode(4));
 }
