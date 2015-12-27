@@ -9,9 +9,9 @@ class Linklist
 {
     public:
         Linklist(int head_key=-1);
-        void InsertNode(int key);
+        void InsertNode(int key);//Insert node in the tail
         void PrintList();
-        void DeleteNode();
+        void DeleteNode();//Delete node from the tail
         int GetNode(int n);
         ~Linklist();
     private:
